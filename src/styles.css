@@ -43,6 +43,40 @@
 }
 
 @layer components {
-    
+    /*      Menu Components     */
+    .menu-ul {
+        @apply 
+            flex 
+            flex-row 
+            h-20 
+            items-center 
+            justify-end 
+            text-2xl 
+            text-center;
+    }
+
+    .menu-item {
+        @apply 
+            flex 
+            flex-row 
+            mr-5 
+            ml-5 
+            tracking-wider 
+            flex-none 
+            hover:text-blueGray 
+            transform 
+            hover:scale-125;
+    }
+
+    .menu-item-a {
+        @apply 
+            bebas 
+            block 
+            ml-3
+            mt-1 
+            transition 
+            duration-200;
+    }
+
 }
 

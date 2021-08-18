@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,8 +8,46 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>Curso de TailwindCSS</title>
 </head>
+
 <body class="bg-body-pattern bg-scroll">
-    <h1 class="">Curso de TailwindCSS - 2021</h1>
+
+    <header id="header" class="bg-bscPrimary h-20 text-white">
+        <div class="container mx-auto flex flex-row">
+            <div id="logo" class="flex flex-1">
+                <div class="w-64 p-0.5 mt-1 mb-1 md:ml-36 cursor-pointer items-center">
+                    <a href="index.html">
+                        <img src="./img/bscLogo.png" alt="Logotipo de Boston Scientific" class="h-16" />
+                    </a>
+                </div>
+            </div>
+
+            <nav class="flex flex-1 md:ml-80">
+                <ul class="menu-ul">
+                    <li class="menu-item">
+                        <span class="symbol">,</span>
+                        <a href="#" class="menu-item-a">ABOUT</a>
+                    </li>
+                </ul>
+
+                <ul class="menu-ul">
+                    <li class="menu-item">
+                        <span class="symbol">S</span>
+                        <a href="#" class="menu-item-a">SALES FORCE</a>
+                    </li>
+                </ul>
+
+                <ul class="menu-ul">
+                    <li class="menu-item">
+                        <span class="symbol">U</span>
+                        <a href="#" class="menu-item-a">LOGIN</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
     
 </body>
+
 </html>
