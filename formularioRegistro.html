@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Formulario de registro</title>
+</head>
+
+<body class="bg-body-pattern bg-scroll">
+    <!--    Inicio del Header   -->
+    <header id="header" class="bg-bscPrimary h-20 text-white">
+        <div class="container mx-auto flex flex-row">
+            <div id="logo" class="flex flex-1">
+                <div class="w-64 p-0.5 mt-1 mb-1 md:ml-36 cursor-pointer items-center">
+                    <a href="index.html">
+                        <img src="./img/bscLogo.png" alt="Logotipo de Boston Scientific" class="h-16" />
+                    </a>
+                </div>
+            </div>
+
+            <nav class="flex flex-1 sm:ml-60 md:ml-80">
+                <ul class="menu-ul">
+                    <li class="menu-item">
+                        <span class="symbol">,</span>
+                        <a href="#" class="menu-item-a">ABOUT</a>
+                    </li>
+                </ul>
+
+                <ul class="menu-ul">
+                    <li class="menu-item">
+                        <span class="symbol">S</span>
+                        <a href="#" class="menu-item-a">SALES FORCE</a>
+                    </li>
+                </ul>
+
+                <ul class="menu-ul">
+                    <li class="menu-item">
+                        <span class="symbol">U</span>
+                        <a href="formularioRegistro.html" class="menu-item-a">REGISTRO</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!--    Fin del Header   -->
+
+    <!--    Inicio del formulario  -->
+    <div class="container bg-blueGray p-10">
+        <div class="row">
+            <div class="col">
+                <h2 class="h1">Formulario de registro</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class="img-responsive mt-24" src="img/bscLogo.png" alt="Logotipo de la empresa">
+            </div>
+
+            <div class="col">
+                <form action="form">
+                    <div class="mb-3">
+                        <label for="nombreUsuario" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="nombreUsuario" aria-describedby="nombreUsuario" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="emailUsuario" class="form-label">Correo electronico</label>
+                        <input type="email" class="form-control" id="emailUsuario" aria-describedby="correo"
+                            placeholder="name@example.com" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="passUsuario" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="passUsuario" aria-describedby="correo" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="passUsuarioConf" class="form-label">Confirmar contraseña</label>
+                        <input type="password" class="form-control" id="passUsuarioconf" aria-describedby="correo" />
+                    </div>
+                </form>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Agree and continue</label>
+                </div>
+                <button id="btnSuccess" type="submit" class="btn btn-primary">Send register form</button>
+
+                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11;">
+                    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <strong id="auto-create" class="me-auto">Envío de formulario exitoso</strong>
+                            <small>Just Now</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container mt-14">
+        <a name="btn-top" id="btn-top" class="btn btn-outline-primary float-end" href="#">Back to top</a>
+        <p>&copy; 2121 Curso de Bootstrap 5. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> </p>
+    </footer>
+
+    <!--    JavaScript  -->
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Toast.js"></script>
+
+</body>
+
+</html>

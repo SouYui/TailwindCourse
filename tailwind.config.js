@@ -19,5 +19,10 @@ module.exports = {
             grayCard: "#d2d7db",
             black: colors.black
         })
+    },
+    variants: {
+        animation: ['responsive', 'hover', 'group-hover'],
+        animate: ['responsive', 'hover', 'group-hover'],
+        fontSize: ['responsive', 'hover', 'group-hover']
     }
 }

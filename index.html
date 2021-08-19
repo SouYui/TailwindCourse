@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>Curso de TailwindCSS</title>
 </head>
 
 <body class="bg-body-pattern bg-scroll">
-
+    <!--    Inicio del Header   -->
     <header id="header" class="bg-bscPrimary h-20 text-white">
         <div class="container mx-auto flex flex-row">
             <div id="logo" class="flex flex-1">
@@ -21,7 +22,7 @@
                 </div>
             </div>
 
-            <nav class="flex flex-1 md:ml-80">
+            <nav class="flex flex-1 sm:ml-60 md:ml-80">
                 <ul class="menu-ul">
                     <li class="menu-item">
                         <span class="symbol">,</span>
@@ -39,15 +40,171 @@
                 <ul class="menu-ul">
                     <li class="menu-item">
                         <span class="symbol">U</span>
-                        <a href="#" class="menu-item-a">LOGIN</a>
+                        <a href="formularioRegistro.html" class="menu-item-a">REGISTRO</a>
                     </li>
                 </ul>
             </nav>
 
         </div>
     </header>
+    <!--    Fin del Header   -->
 
-    
+    <!--    Information Begin   -->
+    <section class="container w-10/12 mx-auto">
+        <div id="cards" class="flex flex-nowrap justify-between">
+            <div class="card">
+                <a href="index.html">
+                    <span class="card-icon group-hover:text-7xl group-hover:text-lightBlue-400">
+                        u
+                    </span>
+                    <h2 class="card-category group-hover:text-white">MARKETING</h2>
+                    <p class="card-description group-hover:text-white">
+                        Marketing de la empresa
+                    </p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="index.html">
+                    <span class="card-icon group-hover:text-7xl group-hover:text-lightBlue-400">
+                        n
+                    </span>
+                    <h2 class="card-category group-hover:text-white">METRICAS</h2>
+                    <p class="card-description group-hover:text-white">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="index.html">
+                    <span class="card-icon group-hover:text-7xl group-hover:text-lightBlue-400">
+                        i
+                    </span>
+                    <h2 class="card-category group-hover:text-white">LICITACIONES</h2>
+                    <p class="card-description group-hover:text-white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nisi?
+                    </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="bebas text-5xl text-grayCard text-justify mt-8">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea recusandae aliquam error eos doloremque
+                nostrum consequuntur nisi blanditiis culpa quam maxime magni impedit, explicabo eum quia
+                perspiciatis esse facere quos.
+            </p>
+        </div>
+    </section>
+    <!--    Information End   -->
+
+    <!--    Bootstrap integration Begin   -->
+    <div id="carouselExampleCaptions" class="carousel slide mt-10 mb-10" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </svg>
+
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </svg>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </svg>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ">Next</span>
+        </button>
+    </div>
+    <!--    Bootstrap integration End   -->
+
+    <!--    Footer Begin   -->
+    <footer id="footer" class="w-full h-auto bg-black text-white overflow-hidden mt-10">
+        <div class="container w-11/12 mx-auto flex flex-row">
+            <div id="menu-footer" class="footer-box">
+                <h5 class="footer-header">MENU</h5>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="#">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="#">SUCCESS FACTORS</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="location" class="footer-box">
+                <h5 class="footer-header">Where we are?</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15056.780196289226!2d-99.19428745629881!3d19.360705332452635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2000d20ff71f1%3A0x550560ba88edc672!2sLiga%20Maya!5e0!3m2!1ses-419!2smx!4v1629391832915!5m2!1ses-419!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    class="w-full h-72 mt-3 border-4 border-bscGray rounded-md shadow-md"></iframe>
+            </div>
+
+            <div id="information" class="footer-box">
+                <h5 class="footer-header">Developed with</h5>
+                <p>
+                    <img src="./img/reactLogo-side.png" alt="Tecnologias de desarrollo"
+                        class="block mx-auto h-20 mb-10">
+                </p>
+
+                <h5 class="footer-header">Developed by</h5>
+                <p>
+                    <span class="symbol">A</span>
+                    <a href="#">Sou Akiyama</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--    Footer End   -->
+
+    <!--    JavaScript  -->
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
