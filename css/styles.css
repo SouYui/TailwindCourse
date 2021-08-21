@@ -1026,7 +1026,6 @@ video {
   border-width: 2px;
   cursor: pointer;
   flex: 1 1 0%;
-  height: 20rem;
 }
 
 .card:hover .group-hover\:text-xs {
@@ -2410,6 +2409,10 @@ video {
     --tw-border-opacity: 1;
   }
 
+  .card {
+    height: 10rem;
+  }
+
   .card:hover .md\:group-hover\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -3770,6 +3773,10 @@ video {
 
   .card:hover .xl\:group-hover\:border-opacity-100 {
     --tw-border-opacity: 1;
+  }
+
+  .card {
+    height: 20rem;
   }
 
   .card:hover .xl\:group-hover\:text-xs {

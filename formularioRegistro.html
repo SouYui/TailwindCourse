@@ -63,16 +63,22 @@
             </div>
 
             <div class="col">
-                <form action="form">
-                    <div class="mb-3">
+                <form id="formValidate" class="needs-validation" novalidate>
+                    <div class="col-md-4 ">
                         <label for="nombreUsuario" class="form-label">Nombre de usuario</label>
-                        <input type="text" class="form-control" id="nombreUsuario" aria-describedby="nombreUsuario" />
+                        <input type="text" class="form-control" id="nombreUsuario" value="Mark" required>
+                        <div class="invalid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="emailUsuario" class="form-label">Correo electronico</label>
                         <input type="email" class="form-control" id="emailUsuario" aria-describedby="correo"
-                            placeholder="name@example.com" />
+                            placeholder="name@example.com" required />
                     </div>
 
                     <div class="mb-3">
@@ -82,16 +88,18 @@
 
                     <div class="mb-3">
                         <label for="passUsuarioConf" class="form-label">Confirmar contraseña</label>
-                        <input type="password" class="form-control" id="passUsuarioconf" aria-describedby="correo" />
+                        <input type="password" class="form-control" id="passUsuarioConf" aria-describedby="correo" />
                     </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Agree and continue</label>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+
                 </form>
-
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Agree and continue</label>
-                </div>
-                <button id="btnSuccess" type="submit" class="btn btn-primary">Send register form</button>
-
+                
                 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11;">
                     <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="toast-header">
@@ -118,6 +126,7 @@
     <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/Toast.js"></script>
+    <script type="text/javascript" src="js/FormValidation.js"></script>
 
 </body>
 
